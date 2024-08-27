@@ -1,1 +1,318 @@
+<!--
+// v0 by Vercel.
+// https://v0.dev/t/9EInQRseUJo
+-->
 
+<style>:root{--background:210 100% 6%;--foreground:180 100% 90%;--primary:200 100% 28%;--primary-foreground:180 100% 90%;--secondary:203 23% 30%;--secondary-foreground:180 100% 90%;--accent:198 70% 50%;--accent-foreground:185 10% 13%;--destructive:0 98% 44%;--destructive-foreground:0 0% 100%;--muted:200 50% 30%;--muted-foreground:180 100% 90%;--card:210 100% 12%;--card-foreground:180 100% 90%;--popover:210 100% 15%;--popover-foreground:180 100% 90%;--border:210 50% 40%;--input:210 50% 40%;--ring:180 100% 90%;--chart-1:200 100% 28%;--chart-2:201 99% 25%;--chart-3:203 98% 22%;--chart-4:204 100% 18%;--chart-5:206 100% 15%;--radius:0rem;}img[src="/placeholder.svg"],img[src="/placeholder-user.jpg"]{filter:sepia(.3) hue-rotate(-150deg) saturate(.5) opacity(0.5) invert(.9)}</style>
+<style>h1, h2, h3, h4, h5, h6 { font-family: 'Bricolage Grotesque', sans-serif; --font-sans-serif: 'Bricolage Grotesque'; }
+</style>
+<style>body { font-family: 'Space Mono', monospace; --font-monospace: 'Space Mono'; }
+</style>
+<div class="flex flex-col min-h-screen">
+  <header class="bg-primary text-primary-foreground py-4 px-6 shadow-sm">
+    <div class="container mx-auto flex items-center justify-between">
+      <a class="flex items-center gap-2" href="#">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="h-8 w-8"
+        >
+          <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+        </svg>
+        <span class="text-xl font-bold">Acme Social</span>
+      </a>
+      <nav class="flex items-center gap-4">
+        <a class="hover:text-primary-foreground/80" href="#">
+          Home
+        </a>
+        <a class="hover:text-primary-foreground/80" href="#">
+          Profile
+        </a>
+        <a class="hover:text-primary-foreground/80" href="#">
+          Friends
+        </a>
+        <a class="hover:text-primary-foreground/80" href="#">
+          Notifications
+        </a>
+      </nav>
+    </div>
+  </header>
+  <div class="container mx-auto flex gap-6 py-8">
+    <div class="w-64 shrink-0">
+      <div class="bg-card p-4 rounded-lg shadow-sm">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="relative flex shrink-0 overflow-hidden rounded-full w-12 h-12 border-2 border-primary">
+            <img class="aspect-square h-full w-full" alt="User Avatar" src="/placeholder-user.jpg" />
+          </span>
+          <div>
+            <h3 class="font-semibold">John Doe</h3>
+            <p class="text-sm text-muted-foreground">@johndoe</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-4 text-center">
+          <div>
+            <p class="font-semibold">100</p>
+            <p class="text-sm text-muted-foreground">Posts</p>
+          </div>
+          <div>
+            <p class="font-semibold">500</p>
+            <p class="text-sm text-muted-foreground">Friends</p>
+          </div>
+          <div>
+            <p class="font-semibold">25</p>
+            <p class="text-sm text-muted-foreground">Groups</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-card p-4 rounded-lg shadow-sm mt-6">
+        <h3 class="font-semibold mb-4">Suggested Connections</h3>
+        <div class="grid grid-cols-2 gap-4">
+          <a class="flex items-center gap-2" href="#">
+            <span class="relative flex shrink-0 overflow-hidden rounded-full w-8 h-8 border-2 border-primary">
+              <img class="aspect-square h-full w-full" alt="User Avatar" src="/placeholder-user.jpg" />
+            </span>
+            <span class="text-sm">Jane Doe</span>
+          </a>
+          <a class="flex items-center gap-2" href="#">
+            <span class="relative flex shrink-0 overflow-hidden rounded-full w-8 h-8 border-2 border-primary">
+              <img class="aspect-square h-full w-full" alt="User Avatar" src="/placeholder-user.jpg" />
+            </span>
+            <span class="text-sm">Bob Smith</span>
+          </a>
+          <a class="flex items-center gap-2" href="#">
+            <span class="relative flex shrink-0 overflow-hidden rounded-full w-8 h-8 border-2 border-primary">
+              <img class="aspect-square h-full w-full" alt="User Avatar" src="/placeholder-user.jpg" />
+            </span>
+            <span class="text-sm">Sarah Lee</span>
+          </a>
+          <a class="flex items-center gap-2" href="#">
+            <span class="relative flex shrink-0 overflow-hidden rounded-full w-8 h-8 border-2 border-primary">
+              <img class="aspect-square h-full w-full" alt="User Avatar" src="/placeholder-user.jpg" />
+            </span>
+            <span class="text-sm">Tom Johnson</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <div class="bg-card p-4 rounded-lg shadow-sm mb-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="relative flex shrink-0 overflow-hidden rounded-full w-10 h-10 border-2 border-primary">
+            <img class="aspect-square h-full w-full" alt="User Avatar" src="/placeholder-user.jpg" />
+          </span>
+          <input
+            class="flex h-10 w-full border border-input ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 flex-1 bg-muted rounded-full px-4 py-2 text-sm"
+            placeholder="What's on your mind?"
+            type="text"
+          />
+          <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-9 rounded-md px-3">
+            Post
+          </button>
+        </div>
+      </div>
+      <div class="space-y-6">
+        <div class="border text-card-foreground bg-card p-4 rounded-lg shadow-sm" data-v0-t="card">
+          <div class="flex-col space-y-1.5 p-6 flex items-center gap-4 mb-4">
+            <span class="relative flex shrink-0 overflow-hidden rounded-full w-10 h-10 border-2 border-primary">
+              <img class="aspect-square h-full w-full" alt="User Avatar" src="/placeholder-user.jpg" />
+            </span>
+            <div>
+              <h3 class="font-semibold">John Doe</h3>
+              <p class="text-sm text-muted-foreground">@johndoe</p>
+            </div>
+            <button
+              class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10 ml-auto"
+              type="button"
+              id="radix-:rc:"
+              aria-haspopup="menu"
+              aria-expanded="false"
+              data-state="closed"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-5 w-5"
+              >
+                <polyline points="18 8 22 12 18 16"></polyline>
+                <polyline points="6 8 2 12 6 16"></polyline>
+                <line x1="2" x2="22" y1="12" y2="12"></line>
+              </svg>
+            </button>
+          </div>
+          <div class="p-6">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl eget ultricies tincidunt,
+              nisl nisl aliquam nisl, eget aliquam nisl nisl eget nisl.
+            </p>
+          </div>
+          <div class="p-6 flex items-center gap-4 mt-4">
+            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-5 w-5"
+              >
+                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+              </svg>
+              <span class="sr-only">Like</span>
+            </button>
+            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-5 w-5"
+              >
+                <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+              </svg>
+              <span class="sr-only">Comment</span>
+            </button>
+            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-5 w-5"
+              >
+                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                <polyline points="16 6 12 2 8 6"></polyline>
+                <line x1="12" x2="12" y1="2" y2="15"></line>
+              </svg>
+              <span class="sr-only">Share</span>
+            </button>
+          </div>
+        </div>
+        <div class="border text-card-foreground bg-card p-4 rounded-lg shadow-sm" data-v0-t="card">
+          <div class="flex-col space-y-1.5 p-6 flex items-center gap-4 mb-4">
+            <span class="relative flex shrink-0 overflow-hidden rounded-full w-10 h-10 border-2 border-primary">
+              <img class="aspect-square h-full w-full" alt="User Avatar" src="/placeholder-user.jpg" />
+            </span>
+            <div>
+              <h3 class="font-semibold">Jane Doe</h3>
+              <p class="text-sm text-muted-foreground">@janedoe</p>
+            </div>
+            <button
+              class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10 ml-auto"
+              type="button"
+              id="radix-:re:"
+              aria-haspopup="menu"
+              aria-expanded="false"
+              data-state="closed"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-5 w-5"
+              >
+                <polyline points="18 8 22 12 18 16"></polyline>
+                <polyline points="6 8 2 12 6 16"></polyline>
+                <line x1="2" x2="22" y1="12" y2="12"></line>
+              </svg>
+            </button>
+          </div>
+          <div class="p-6">
+            <p>
+              Sed euismod, nisl eget ultricies tincidunt, nisl nisl aliquam nisl, eget aliquam nisl nisl eget nisl.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="p-6 flex items-center gap-4 mt-4">
+            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-5 w-5"
+              >
+                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+              </svg>
+              <span class="sr-only">Like</span>
+            </button>
+            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-5 w-5"
+              >
+                <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+              </svg>
+              <span class="sr-only">Comment</span>
+            </button>
+            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-5 w-5"
+              >
+                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                <polyline points="16 6 12 2 8 6"></polyline>
+                <line x1="12" x2="12" y1="2" y2="15"></line>
+              </svg>
+              <span class="sr-only">Share</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
